@@ -1,226 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Himanshu's Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f4f7fa;
-      color: #333;
-      scroll-behavior: smooth;
-    }
-
-    .container {
-      padding: 30px;
-      margin-top: 30px;
-      border-radius: 15px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      background-color: #ffffff;
-      transition: transform 0.3s ease;
-    }
-
-    .container:hover {
-      transform: translateY(-5px);
-    }
-
-    .header {
-      background-image: linear-gradient(to bottom, #337ab7, #1a4971);
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-      border-radius: 10px 10px 0 0;
-      animation: fadeInDown 1s ease-in-out;
-    }
-
-    .header img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      margin-bottom: 20px;
-      border: 4px solid #fff;
-      transition: transform 0.3s ease;
-    }
-
-    .header img:hover {
-      transform: scale(1.1);
-    }
-
-    .navbar {
-      background-color: #ffffff;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      margin-bottom: 20px;
-    }
-
-    .nav-link {
-      color: #337ab7 !important;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-
-    .nav-link:hover {
-      color: #1a4971 !important;
-    }
-
-    .card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border: none;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    }
-
-    .card-body {
-      background-color: #f8f9fa;
-    }
-
-    h2 {
-      color: #1a4971;
-      margin-bottom: 20px;
-      position: relative;
-    }
-
-    h2::after {
-      content: '';
-      width: 50px;
-      height: 3px;
-      background: #337ab7;
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      transition: width 0.3s ease;
-    }
-
-    h2:hover::after {
-      width: 100px;
-    }
-
-    @keyframes fadeInDown {
-      0% {
-        opacity: 0;
-        transform: translateY(-20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    section {
-      animation: fadeInUp 1s ease-in-out;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Professional Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS for animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">     
 </head>
 <body>
-  <header class="header">
-    <img src="C:\Users\HP\OneDrive\Pictures\my personal pic\Himanshu image .jpg" alt="Himanshu's Image">
-    <h1>Himanshu's Portfolio</h1>
-    <p>Passionate Developer | C++ | Java | Python</p>
-  </header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Himanshu's Portfolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <section id="about" class="container mt-5" data-aos="fade-up">
-    <h2>About Me</h2>
-    <p>Hello, I'm Himanshu, a passionate developer with expertise in C++, Java, and Python. I'm excited to showcase my skills and projects in this portfolio.</p>
-  </section>
-
-  <section id="skills" class="container mt-5" data-aos="fade-up" data-aos-delay="100">
-    <h2>Skills</h2>
-    <ul class="list-group">
-      <li class="list-group-item">C++</li>
-      <li class="list-group-item">Java</li>
-      <li class="list-group-item">Python</li>
-    </ul>
-  </section>
-
-  <section id="projects" class="container mt-5" data-aos="fade-up" data-aos-delay="200">
-    <h2>Projects</h2>
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Project 1</h5>
-            <p class="card-text">Description of project 1.</p>
-          </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Himanshu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certificates">Certificates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profiles">Coding Profiles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Project 2</h5>
-            <p class="card-text">Description of project 2.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Project 3</h5>
-            <p class="card-text">Description of project 3.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <section id="contact" class="container mt-5" data-aos="fade-up" data-aos-delay="300">
-    <h2>Get in Touch</h2>
-    <p>If you'd like to get in touch with me, please feel free to reach out through the following channels:</p>
-    <ul class="list-group">
-      <li class="list-group-item"><a href="himanshu.2432774@>your_email@egmail.com"xample.com</a></li>
-      <li class="list-group-item"><a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin">LinkedIn Profile</a></li>
-      <li class="list-group-item"><a href="https://github.com/himanshu-2432774">GitHub Profile</a></li>
-    </ul>
-  </section>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <img src="my pic is/Himanshu image .jpg" alt="Profile Picture" class="profile-pic" data-aos="zoom-in">
+            <h1 data-aos="fade-down">Hi, I'm Himanshu</h1>
+            <p class="lead" data-aos="fade-up" data-aos-delay="100">A passionate developer creating innovative solutions</p>
+            <a href="#contact" class="btn btn-primary btn-lg mt-3" data-aos="zoom-in" data-aos-delay="200">Get in Touch</a>
+        </div>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 800,
-      once: true
-    });
-  </script>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <p data-aos="fade-up" data-aos-delay="100">
+                        I'm a dedicated software developer with a passion for building user-friendly and efficient applications. With experience in web development, I specialize in creating responsive and dynamic websites using modern technologies. My goal is to deliver high-quality code and innovative solutions that meet client needs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Skills</h2>
+            <div class="row">
+                <div class="col-md-4 skill-item" data-aos="fade-right">
+                    <div class="card p-4">
+                        <h5>Frontend Development</h5>
+                        <p>HTML, CSS, JavaScript, React, Bootstrap</p>
+                    </div>
+                </div>
+                <div class="col-md-4 skill-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card p-4">
+                        <h5>Backend Development</h5>
+                        <p>Node.js, Python, Express, Django</p>
+                    </div>
+                </div>
+                <div class="col-md-4 skill-item" data-aos="fade-left" data-aos-delay="200">
+                    <div class="card p-4">
+                        <h5>Other Tools</h5>
+                        <p>Git, Docker, SQL, MongoDB</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="py-5">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Certificates</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col" data-aos="zoom-in-up" data-aos-delay="100">
+                    <div class="card certificate-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Full Stack Web Development</h5>
+                            <p class="card-text">Coursera, 2023</p>
+                            <p class="card-text"><a href="https://www.coursera.org/verify/your-certificate-id" target="_blank" class="certificate-link">View Certificate</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="zoom-in-up" data-aos-delay="200">
+                    <div class="card certificate-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Python for Data Science</h5>
+                            <p class="card-text">Udemy, 2024</p>
+                            <p class="card-text"><a href="https://www.udemy.com/certificate/your-certificate-id" target="_blank" class="certificate-link">View Certificate</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="zoom-in-up" data-aos-delay="300">
+                    <div class="card certificate-card">
+                        <div class="card-body">
+                            <h5 class="card-title">AWS Certified Developer</h5>
+                            <p class="card-text">Amazon Web Services, 2024</p>
+                            <p class="card-text"><a href="https://aws.amazon.com/verification" target="_blank" class="certificate-link">View Certificate</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="zoom-in-up" data-aos-delay="400">
+                    <div class="card certificate-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Advanced React and Redux</h5>
+                            <p class="card-text">Udemy, 2025</p>
+                            <p class="card-text"><a href="https://www.udemy.com/certificate/your-certificate-id" target="_blank" class="certificate-link">View Certificate</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coding Profiles Section -->
+    <section id="profiles" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Coding Profiles</h2>
+            <div class="row">
+                <div class="col-md-4 profile-item" data-aos="fade-right">
+                    <div class="card p-4">
+                        <h5>GitHub</h5>
+                        <p><a href="https://github.com/himanshu-2432774" target="_blank">https://github.com/himanshu-2432774</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4 profile-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card p-4">
+                        <h5>LeetCode</h5>
+                        <p><a href="https://leetcode.com/u/himanshu-letcode/" target="_blank">https://leetcode.com/u/himanshu-letcode/</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4 profile-item" data-aos="fade-left" data-aos-delay="200">
+                    <div class="card p-4">
+                        <h5>HackerRank</h5>
+                        <p><a href="https://www.hackerrank.com/profile/24116002247_Hima" target="_blank">https://www.hackerrank.com/profile/24116002247_Hima</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
+            <div class="contact-info" data-aos="fade-up" data-aos-delay="100">
+                <div class="card p-4">
+                    <h5>Contact Information</h5>
+                    <p><strong>Email:</strong> <a href="himanshu.2432774@gmail.com">himanshu.2432774@gmail.com</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+91 8739006468">+91 8739006468</a></p>
+                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/himanshu-kumar-0a7415330/" target="_blank">https://www.linkedin.com/in/himanshu-kumar-0a7415330</a></p>
+                    <p><strong>Twitter:</strong> <a href="https://twitter.com/yourusername" target="_blank">@yourusername</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Himanshu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true,
+            easing: 'ease-in-out'
+        });
+    </script>
 </body>
 </html>
